@@ -20,6 +20,11 @@
     \fancyhead[L]{\leftmark} % Section name on the left
     \fancyhead[R]{\thepage} % Page number on the right
 }
+\fancypagestyle{tocstyle}{
+    \fancyhf{} % Clear header and footer
+    \fancyhead[L]{CONTENTS} % Section name on the left
+    \fancyhead[R]{\thepage} % Page number on the right
+}
 
 \pagestyle{myarticlestyle}
 \setlength{\headheight}{15pt}
@@ -28,36 +33,27 @@
 \author{Omar Ebrahim 110076575\\Dr. Daniel Green\\ University of Windsor}
 
 \begin{document}
-    \maketitle
-    \section*{Abstract}
-    \addcontentsline{toc}{section}{Abstract}
-    \newpage
-    \tableofcontents
-    \listoffigures
-    \listoftables
-    \newpage
-    \section{Introduction}
-    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-    Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-    Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-    Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-    occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-    officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
-    Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non
-    excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut
-    ea consectetur et est culpa et culpa duis.
-    \newpage
-    \section{Section}
-    \newpage
-    \section{Section}
-    \newpage
-    \section{Discussion}
-    \newpage
-    \section{Conclusions}
-    \newpage
-    \section{References}
-    \newpage
-    \appendix
-    \section{Appendix}
+\maketitle
+\section*{Abstract}
+\addcontentsline{toc}{section}{Abstract}
+\newpage
+\tableofcontents
+\listoffigures
+\listoftables
+\thispagestyle{tocstyle}
+\newpage
+\section{Introduction}
+\newpage
+\section{Section}
+\newpage
+\section{Section}
+\newpage
+\section{Discussion}
+\newpage
+\section{Conclusions}
+\newpage
+\section{References}
+\newpage
+\appendix
+\section{Appendix}
 \end{document}
