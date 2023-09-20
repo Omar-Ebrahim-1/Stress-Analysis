@@ -1,1 +1,10 @@
 Design_Project.pdf
+*.aux
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fdb_latexmk
+*.lof
+*.lot
