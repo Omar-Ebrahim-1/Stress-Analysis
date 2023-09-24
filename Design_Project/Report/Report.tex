@@ -14,6 +14,7 @@
 \usepackage{float} % Allows for better figure placement
 \usepackage{geometry} % Allows for custom page geometry
 \usepackage{fancyhdr} % Allows for custom headers and footers
+\usepackage{caption} % Allows for custom captions
 
 \fancypagestyle{myarticlestyle}{
     \fancyhf{} % Clear header and footer
@@ -44,16 +45,33 @@
 \newpage
 \section{Introduction}
 \newpage
-\section{Section}
+\section{Design}
+\subsection{Preliminary Sketches}
+\subsection{Detailed Drawings}
+\subsection{Components, Prices, and Specifications}
+Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
+consectetur cupidatat.\\
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        Components & Prices & Specifications \\
+        \midrule
+        Masking tape & Row 1, Col 2 & Row 1, Col 3 \\
+        Bristol board & Row 2, Col 2 & Row 2, Col 3 \\
+        White paper glue & Row 2, Col 2 & Row 2, Col 3 \\
+        Polyester sewing thread & Row 2, Col 2 & Row 2, Col 3 \\
+        \bottomrule
+    \end{tabular}
+    \captionof{table}{List of components, prices, and specifications}
+    \label{tab:components}
+\end{table}
 \newpage
-\section{Section}
+\section{Calculations}
+\section{Test Results}
 \newpage
 \section{Discussion}
+\subsection{Failure Analysis}
 \newpage
 \section{Conclusions}
-\newpage
-\section{References}
-\newpage
-\appendix
-\section{Appendix}
 \end{document}
