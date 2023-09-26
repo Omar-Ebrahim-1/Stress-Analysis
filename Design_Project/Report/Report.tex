@@ -36,6 +36,9 @@
 \begin{document}
 \maketitle
 \section*{Abstract}
+This report provides an overview of the ongoing project focused on the 
+sketching, designing, modeling, and construction of a pressure vessel.\\[10pt]
+The report.
 \addcontentsline{toc}{section}{Abstract}
 \newpage
 \tableofcontents
@@ -44,23 +47,53 @@
 \thispagestyle{tocstyle}
 \newpage
 \section{Introduction}
+The report outlines the process the team followed to design and construct
+the pressure vessel.\\[10pt]
+The problem statement is to maximize the pressure that the vessel can withstand.
+To achieve this goal, the team employed a structured approach in the design and
+construction of the pressure vessel, relying on a combination of essential
+tools and methodologies, including:
+\begin{itemize}
+    \item Sketches for initial conceptualization
+    \item Detailed CAD Drawings for precise technical specifications
+    \item Analytical Calculations to predict the performance of the design
+    \item Rigorous testing procedures to refine and validate the design
+\end{itemize}
+These combined efforts were instrumental in ensuring the ultimate design's
+robustness, reliability, and efficiency.
 \newpage
 \section{Design}
+This section outlines the design process, including the initial sketches and
+detailed drawings. The section also includes a table outlining important 
+information about the design.
 \subsection{Preliminary Sketches}
+A preliminary sketch of the pressure vessel was created to provide a general
+idea of the design. The sketch is shown in Figure \ref{fig:sketch}.\\[10pt]
+The design consists of a cylindrical thin walled pressure vessel supported by
+two stands. The vessel is sealed by a cap at the top entrance which
+can be removed to pressurize the vessel.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Sketch.jpeg}
+    \caption{Preliminary Sketch of the pressure vessel}
+    \label{fig:sketch}
+\end{figure}
+\newpage
 \subsection{Detailed Drawings}
 \subsection{Components, Prices, and Specifications}
-Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint
-consectetur cupidatat.\\
+The components used in the construction of the pressure vessel are listed in
+Table \ref{tab:components}. The table also includes the prices of the components
+and their specifications.
 \begin{table}[htb]
     \centering
     \begin{tabular}{ccc}
         \toprule
-        Components & Prices & Specifications \\
+        Components & Prices (CAD) & Specifications \\
         \midrule
-        Masking tape & Row 1, Col 2 & Row 1, Col 3 \\
-        Bristol board & Row 2, Col 2 & Row 2, Col 3 \\
-        White paper glue & Row 2, Col 2 & Row 2, Col 3 \\
-        Polyester sewing thread & Row 2, Col 2 & Row 2, Col 3 \\
+        Masking tape & 1.50 & Row 1, Col 3 \\
+        Card board & 0 & Row 2, Col 3 \\
+        White paper glue & 1.25 & Row 2, Col 3 \\
+        Polyester sewing thread & 1.25 & Row 2, Col 3 \\
         \bottomrule
     \end{tabular}
     \captionof{table}{List of components, prices, and specifications}
@@ -68,6 +101,40 @@ consectetur cupidatat.\\
 \end{table}
 \newpage
 \section{Calculations}
+For cylindrical thin walled pressure vessels, the hoop stress is given by:
+\begin{equation}
+    \sigma_1 = \frac{pr}{t}
+    \label{eq:hoop}
+\end{equation}
+and the longitudinal stress is given by:
+\begin{equation}
+    \sigma_2 = \frac{pr}{2t}
+    \label{eq:long}
+\end{equation}
+where $p$ is the internal pressure, $r$ is the radius of the vessel, and $t$ is
+the wall thickness of the vessel.\\[10pt]
+The pressure vessel is thin walled if the following condition is satisfied:
+\begin{equation}
+    \frac{r}{t} > 10
+    \label{eq:thin}
+\end{equation}
+Since the pressure vessel's wall thickness must not exceed 4 mm, and the 
+outside diameter of the vessel must not exceed 200 mm, the condition in
+Equation \ref{eq:thin} can be shown to be satisfied:
+\begin{equation}
+    \frac{r}{t} = \frac{100}{4} = 25 > 10
+    \label{eq:check_thin}
+\end{equation}
+Hence, the pressure vessel can be classified as thin-walled.\\[10pt]
+The maximum pressure that the vessel can withstand is given by Equation
+\ref{eq:hoop} since the maximum pressure from the hoop stress is lower than the
+maximum pressure from the longitudinal stress.\\[10pt]
+Hence, the maximum pressure that the vessel can withstand is given by:
+\begin{equation}
+    p_{max} = \frac{\sigma_1 t}{r}
+    \label{eq:max_pressure}
+\end{equation}
+\newpage
 \section{Test Results}
 \newpage
 \section{Discussion}
