@@ -35,11 +35,6 @@
 
 \begin{document}
 \maketitle
-\section*{Abstract}
-This report provides an overview of the ongoing project focused on the 
-sketching, designing, modeling, and construction of a pressure vessel.\\[10pt]
-The report.
-\addcontentsline{toc}{section}{Abstract}
 \newpage
 \tableofcontents
 \listoffigures
@@ -134,11 +129,115 @@ Hence, the maximum pressure that the vessel can withstand is given by:
     p_{max} = \frac{\sigma_1 t}{r}
     \label{eq:max_pressure}
 \end{equation}
+To find $\sigma_1$, the team conducted a tensile test on a sample
+cardboard specimen. The team uses the following equation to calculate the
+stress:
+\begin{equation}
+    \sigma_1 = \frac{F}{A}
+    \label{eq:stress}
+\end{equation}
+Where $F$ is the force applied to the specimen, and $A$ is the cross-sectional
+area of the specimen.\\[10pt]
+The force $F$ applied to the specimen was measured using a
+force gauge resulting in a force of [Insert Force Here], and the
+cross-sectional area $A$ was measured to be [Insert Area Here]. 
+Hence, the stress $\sigma_1$ is given by:
+\begin{equation}
+    \sigma_1 = \frac{[Insert Force Here]}{[Insert Area Here]} = [Insert Stress Here]
+    \label{eq:stress_value}
+\end{equation}
+Substituting the value of $\sigma_1$ into Equation \ref{eq:max_pressure}, the
+maximum pressure that the vessel can withstand is given by:
+\begin{equation}
+    p_{max} = \frac{[Insert Stress Here] \times 0.004}{0.1} = [Insert Pressure Here]
+    \label{eq:max_pressure_value}
+\end{equation}
+Therefore, the team predicts that the pressure vessel can withstand a maximum
+pressure of [Insert Pressure Here].
 \newpage
 \section{Test Results}
+The team conducted burst tests to validate the design and ensure
+that the designed pressure vessel can withstand the predicted maximum
+pressure.\\[10pt]
+To conduct the burst tests, the team constructed two prototypes of the
+pressure vessel. The team then pressurized the vessels to the predicted maximum
+pressure and observed the results.\\[10pt]
+The results of the burst tests are shown in Table \ref{tab:burst_tests}.
+\begin{table}[htb]
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        Vessel & Burst Pressure (kPa) \\
+        \midrule
+        1 & [Insert Pressure Here] \\
+        2 & [Insert Pressure Here] \\
+        \bottomrule
+    \end{tabular}
+    \captionof{table}{Results of the burst tests}
+    \label{tab:burst_tests}
+\end{table}
+To find the average burst pressure, the team uses the following equation:
+\begin{equation}
+    \bar{p} = \frac{p_1 + p_2}{2}
+    \label{eq:avg_pressure}
+\end{equation}
+where $p_1$ and $p_2$ are the burst pressures of the two vessels.\\[10pt]
+Substituting the values of $p_1$ and $p_2$ into Equation \ref{eq:avg_pressure},
+the average burst pressure is given by:
+\begin{equation}
+    \bar{p} = \frac{[Insert Pressure Here] + [Insert Pressure Here]}{2} = [Insert Pressure Here]
+    \label{eq:avg_pressure_value}
+\end{equation}
+Therefore, the average burst pressure is [Insert Pressure Here].
 \newpage
 \section{Discussion}
 \subsection{Failure Analysis}
+The team conducted a failure analysis to determine the cause of failure of the
+pressure vessel.\\[10pt]
+The team observed that the failure occurred at the bottom of the vessel. The
+team also observed that the failure occurred at the seam between the vessel and
+the base see Figures [Insert Reference Here] and [Insert Reference Here].\\[10pt]
+The team concluded that the failure occurred due to the poor adhesion between
+the vessel and the base.
+\subsection{Percentage Error}
+The percentage error between the predicted maximum pressure and the average
+burst pressure is given by:
+\begin{equation}
+    \% error = \frac{\bar{p} - p_{max}}{p_{max}} \times 100
+    \label{eq:error}
+\end{equation}
+Substituting the values of $\bar{p}$ and $p_{max}$ into Equation \ref{eq:error},
+the percentage error is given by:
+\begin{equation}
+    \% error = \frac{[Insert P] - [Insert P]}{[Insert Pressure]} \times 100 = [Insert]
+    \label{eq:error_value}
+\end{equation}
+The experimental burst pressure of the pressure vessel is [Insert Percentage Here]
+lower than the predicted maximum pressure.\\[10pt]
+To improve the performance of the pressure vessel, the team recommends that the
+adhesion between the vessel and the base be improved to prevent failure at the
+seam.
 \newpage
 \section{Conclusions}
+The main objectives of this report were to provide a detailed description of the
+design process, including the initial sketches and detailed drawings, 
+make predictions about the performance of the design using analytical
+calculations, validate the design using rigorous testing procedures
+and lastly to provide a failure analysis for the pressure vessel.\\[10pt]
+The key findings are summarized as follows:
+\begin{itemize}
+    \item The analytical calculations predicted that the pressure vessel can
+        withstand a maximum pressure of [Insert Pressure Here] while the
+        experimental burst tests showed that the pressure vessel can withstand
+        a maximum pressure of [Insert Pressure Here]. As a result, the
+        percentage error between the predicted maximum pressure and the
+        experimental burst pressure is [Insert Percentage Here].
+    \item The failure analysis showed that the failure occurred at the bottom
+        of the vessel at the seam between the vessel and the base.
+    \item The failure occurred due to the poor adhesion between the vessel and
+        the base.
+    \item To improve the performance of the pressure vessel, the team
+        recommends that the adhesion between the vessel and the base be
+        improved to prevent failure at the seam.
+\end{itemize}
 \end{document}
