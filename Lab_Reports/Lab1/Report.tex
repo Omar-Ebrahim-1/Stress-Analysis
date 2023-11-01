@@ -220,7 +220,7 @@ for the top and bottom rosettes for steel specimen are shown in Figure
     \label{fig:steel_bot}
 \end{figure}
 \subsection{Calculation of Theoretical Principal Stresses}
-\subsection{Analysis under Various Loading Cases}
+\subsection{Theoretical and Experimental Results}
 This section presents the analysis of the experimental data obtained from the
 laboratory experiment. The data is presented in tabular form and is organized
 by loading case and specimen type.
@@ -305,11 +305,45 @@ bottom rosettes are shown in Table \ref{tab:table_steel_top} and Table
   \caption{Experimental and Theoretical Results for Steel Specimen (Bottom Rosette)}
   \label{tab:table_steel_bot}
 \end{table}
-\subsection{Table Results and Comparison of Principle Stresses}
+\subsection{Comparison of Principle Stresses}
+By observing the tables above, it is clear that the theoretical and
+experimental results are quite similar to each other. The percent error for
+the experimental principal stresses at each gauge location form the theoretical
+values can be found using the following equation:
+\begin{equation}
+    \text{Percent Error} = \frac{\text{Experimental Stress} - \text{Theoretical Stress}}{\text{Theoretical Stress}} \times 100\%
+    \label{eq:percent_error}
+\end{equation}
+To calculate the percent error, one can find the sum the experimental stresses
+and theoretical stresses for each gauge location and then use Equation
+\ref{eq:percent_error} to find the percent error. The percent error for the
+aluminum specimen is:
+\begin{equation}
+    \begin{split}
+      \text{Experimental Stress} &= 1.6 + 54.6 + 194.8 + 6.8 + 11.4 + 3.5 + 0.9 + 8.6 = 282.87 \\[10pt]
+      \text{Theoretical Stress} &= 194.80 + 6.80 + 11.49 + 3.59 + 0.90 + 8.60 = 226.18 \\[10pt]
+      \text{Percent Error} &= \frac{282.87 - 226.18}{226.18} \times 100\% = 25.04\%
+      \label{eq:alu_percent_error}
+    \end{split}
+  \end{equation}
+Hence, the percent error for the aluminum specimen is 25.04\%.
 \newpage
 \section{Discussion}
+This section presents the analysis of the experimental data obtained from the
+laboratory experiment.
 \subsection{Analysis of Results}
-
+The experimental data obtained from the laboratory experiment was analyzed to
+determine the principal stresses at various points within the cantilevered tube
+under the influence of distinct loading conditions. The experimental results
+were compared to theoretical calculations to evaluate the accuracy of the
+obtained data. The following observations were made from the analysis of the
+experimental data:
+\begin{enumerate}
+    \item The principal stresses at the top and bottom rosettes were found to
+      be similar in magnitude, but opposite in sign, as expected.
+    \item The principal stresses at the top and bottom rosettes were found to
+      be similar in magnitude, but opposite in sign, as expected.
+\end{enumerate}
 \subsection{Sources of Error}
 The experimental determination of principal stresses in the cantilevered tube
 involved a comprehensive testing procedure; however, several potential sources
