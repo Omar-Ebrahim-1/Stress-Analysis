@@ -71,7 +71,14 @@ design considerations.
 This section outlines the procedure for the laboratory experiment, including
 the equipment and materials used, the testing procedure, and the data
 collection process. The sketch of the tabular structure with dimensions and
-strain gauge locations is shown in Figure INS.
+strain gauge locations is shown in Figure \ref{fig:sketch}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/Sketch.jpeg}
+    \captionsetup{justification=raggedright,singlelinecheck=false}
+    \caption{Sketch of the tabular structure with dimensions and strain gauge locations}
+    \label{fig:sketch}
+\end{figure}
 \subsection{Preliminary Set-Up Procedure}
 \begin{enumerate}
     \item Check the specimen dimensions and strain gauge location.
@@ -220,6 +227,41 @@ for the top and bottom rosettes for steel specimen are shown in Figure
     \label{fig:steel_bot}
 \end{figure}
 \subsection{Calculation of Theoretical Principal Stresses}
+This section presents the calculation of the theoretical principal stresses
+using the strain gauge readings obtained from the laboratory experiment. First,
+the FBD of the aluminum specimen is shown in Figure \ref{fig:alu_fbd}. The FBD
+of the steel specimen is shown in Figure \ref{fig:steel_fbd}. The theoretical principal stresses are calculated using the following equations:
+\begin{equation}
+    \begin{split}
+      \sigma_{max} &= \frac{1}{2} \left( \sigma_{xx} + \sigma_{yy} \right) + \sqrt{\left( \frac{1}{2} \left( \sigma_{xx} - \sigma_{yy} \right) \right)^2 + \tau_{xy}^2} \\[10pt]
+      \sigma_{min} &= \frac{1}{2} \left( \sigma_{xx} + \sigma_{yy} \right) - \sqrt{\left( \frac{1}{2} \left( \sigma_{xx} - \sigma_{yy} \right) \right)^2 + \tau_{xy}^2}
+      \label{eq:principal_stresses}
+    \end{split}
+  \end{equation}
+where $\sigma_{xx}$, $\sigma_{yy}$, and $\tau_{xy}$ are the normal and shear
+stresses, respectively, in the $x$ and $y$ directions. Now plugging in the
+values for $\sigma_{xx}$, $\sigma_{yy}$, and $\tau_{xy}$ into Equation
+\ref{eq:principal_stresses} yields us the results for the theoretical
+principal stresses. The results for the theoretical principal stresses for the
+aluminum specimen are shown in Table \ref{tab:table_alu_top} and Table
+\ref{tab:table_alu_bot}, respectively. The results for the theoretical
+principal stresses for the steel specimen are shown in Table
+\ref{tab:table_steel_top} and Table \ref{tab:table_steel_bot}, respectively.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/FBDA.jpeg}
+    \captionsetup{justification=raggedright,singlelinecheck=false}
+    \caption{FBD of aluminum specimen}
+    \label{fig:alu_fbd}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/FBDS.jpeg}
+    \captionsetup{justification=raggedright,singlelinecheck=false}
+    \caption{FBD of steel specimen}
+    \label{fig:steel_fbd}
+\end{figure}
+\newpage
 \subsection{Theoretical and Experimental Results}
 This section presents the analysis of the experimental data obtained from the
 laboratory experiment. The data is presented in tabular form and is organized
@@ -305,6 +347,7 @@ bottom rosettes are shown in Table \ref{tab:table_steel_top} and Table
   \caption{Experimental and Theoretical Results for Steel Specimen (Bottom Rosette)}
   \label{tab:table_steel_bot}
 \end{table}
+\newpage
 \subsection{Comparison of Principle Stresses}
 By observing the tables above, it is clear that the theoretical and
 experimental results are quite similar to each other. The percent error for
@@ -314,6 +357,7 @@ values can be found using the following equation:
     \text{Percent Error} = \frac{\text{Experimental Stress} - \text{Theoretical Stress}}{\text{Theoretical Stress}} \times 100\%
     \label{eq:percent_error}
 \end{equation}
+\subsubsection{Aluminum Specimen}
 To calculate the percent error, one can find the sum the experimental stresses
 and theoretical stresses for each gauge location and then use Equation
 \ref{eq:percent_error} to find the percent error. The percent error for the
@@ -327,6 +371,19 @@ aluminum specimen is:
     \end{split}
   \end{equation}
 Hence, the percent error for the aluminum specimen is 25.04\%.
+\subsubsection{Steel Specimen}
+To calculate the percent error, one can find the sum the experimental stresses
+and theoretical stresses for each gauge location and then use Equation
+\ref{eq:percent_error} to find the percent error. The percent error for the
+steel specimen is:
+\begin{equation}
+    \begin{split}
+      \text{Experimental Stress} &= 5.1 + 42.1 + 53.0 + 10.7 + 15.7 + 23.5 + 1.9 + 8.9 = 161.9 \\[10pt]
+      \text{Theoretical Stress} &= 53.04 + 10.70 + 15.69 + 23.46 + 1.88 + 8.85 = 113.62 \\[10pt]
+      \text{Percent Error} &= \frac{161.9 - 113.62}{113.62} \times 100\% = 18.89\%
+      \label{eq:steel_percent_error}
+    \end{split}
+  \end{equation}
 \newpage
 \section{Discussion}
 This section presents the analysis of the experimental data obtained from the
@@ -373,4 +430,20 @@ setup, calibration verification, and careful execution of procedures is
 recommended.
 \newpage
 \section{Conclusions}
+This laboratory experiment aimed to determine the principal stresses at
+multiple points within a cantilevered tube subjected to distinct loading
+conditions. The experimental data obtained from the laboratory experiment was
+analyzed to determine the principal stresses at various points within the
+cantilevered tube under the influence of distinct loading conditions. The
+experimental results were compared to theoretical calculations to evaluate the
+accuracy of the obtained data. The following conclusions were made from the
+analysis of the experimental data:
+\begin{enumerate}
+  \item The percent error for the stresses of the specimens were found to be
+    25.04\% and 18.89\% for the aluminum and steel specimens, respectively.
+  \item The principal stresses at the top and bottom rosettes were found to be
+    similar in magnitude, but opposite in sign.
+  \item The top rossettes had an upward graphing Strain vs. Load graph, while
+    the bottom rossettes had a downward graphing Strain vs. Load graph.
+\end{enumerate}
 \end{document}

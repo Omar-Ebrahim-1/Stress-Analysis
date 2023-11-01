@@ -116,7 +116,7 @@ Since the pressure vessel's wall thickness must not exceed 4 mm, and the
 outside diameter of the vessel must not exceed 200 mm, the condition in
 Equation \ref{eq:thin} can be shown to be satisfied:
 \begin{equation}
-    \frac{r}{t} = \frac{100}{4} = 25 > 10
+    \frac{r}{t} = \frac{85}{4} = 21.25 > 10
     \label{eq:check_thin}
 \end{equation}
 Hence, the pressure vessel can be classified as thin-walled.\\[10pt]
@@ -137,22 +137,27 @@ stress:
 \end{equation}
 Where $F$ is the force applied to the specimen, and $A$ is the cross-sectional
 area of the specimen.\\[10pt]
-The force $F$ applied to the specimen was measured using a
-force gauge resulting in a force of [Insert Force Here], and the
-cross-sectional area $A$ was measured to be [Insert Area Here]. 
+The force $F$ applied to the specimen was measured empirically
+resulting in a force of approximately 700 N, the length was measured
+to be 25 cm, and the width was measured to be 35 cm. Therefore, the area $A$ of
+the specimen is given by:
+\begin{equation}
+    A = 0.25 \times 0.35 = 0.0875 \text{ m}^2
+    \label{eq:area}
+\end{equation}
 Hence, the stress $\sigma_1$ is given by:
 \begin{equation}
-    \sigma_1 = \frac{[Insert Force Here]}{[Insert Area Here]} = [Insert Stress Here]
+    \sigma_1 = \frac{700}{0.0875} = 8000 \text{ Pa}
     \label{eq:stress_value}
 \end{equation}
 Substituting the value of $\sigma_1$ into Equation \ref{eq:max_pressure}, the
 maximum pressure that the vessel can withstand is given by:
 \begin{equation}
-    p_{max} = \frac{[Insert Stress Here] \times 0.004}{0.1} = [Insert Pressure Here]
+    p_{max} = \frac{8000 \times 0.004}{0.085} = 376.47 \text{ Pa}
     \label{eq:max_pressure_value}
 \end{equation}
 Therefore, the team predicts that the pressure vessel can withstand a maximum
-pressure of [Insert Pressure Here].
+pressure of 320 Pa.
 \newpage
 \section{Test Results}
 The team conducted burst tests to validate the design and ensure
