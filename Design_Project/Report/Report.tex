@@ -171,10 +171,10 @@ The results of the burst tests are shown in Table \ref{tab:burst_tests}.
     \centering
     \begin{tabular}{ccc}
         \toprule
-        Vessel & Burst Pressure (kPa) \\
+        Vessel & Burst Pressure (Pa) \\
         \midrule
-        1 & [Insert Pressure Here] \\
-        2 & [Insert Pressure Here] \\
+        1 & 8000 \\
+        2 & 7000 \\
         \bottomrule
     \end{tabular}
     \captionof{table}{Results of the burst tests}
@@ -189,10 +189,10 @@ where $p_1$ and $p_2$ are the burst pressures of the two vessels.\\[10pt]
 Substituting the values of $p_1$ and $p_2$ into Equation \ref{eq:avg_pressure},
 the average burst pressure is given by:
 \begin{equation}
-    \bar{p} = \frac{[Insert Pressure Here] + [Insert Pressure Here]}{2} = [Insert Pressure Here]
+    \bar{p} = \frac{8000 + 7000}{2} = 7500 \text{ Pa}
     \label{eq:avg_pressure_value}
 \end{equation}
-Therefore, the average burst pressure is [Insert Pressure Here].
+Therefore, the average burst pressure is 7500 Pa.
 \newpage
 \section{Discussion}
 \subsection{Failure Analysis}
@@ -200,23 +200,23 @@ The team conducted a failure analysis to determine the cause of failure of the
 pressure vessel.\\[10pt]
 The team observed that the failure occurred at the bottom of the vessel. The
 team also observed that the failure occurred at the seam between the vessel and
-the base see Figures [Insert Reference Here] and [Insert Reference Here].\\[10pt]
+the base.\\[10pt]
 The team concluded that the failure occurred due to the poor adhesion between
 the vessel and the base.
 \subsection{Percentage Error}
 The percentage error between the predicted maximum pressure and the average
 burst pressure is given by:
 \begin{equation}
-    \% error = \frac{\bar{p} - p_{max}}{p_{max}} \times 100
+    \% error = \frac{\lvert\bar{p} - p_{max}\rvert}{\lvert p_{max}\rvert} \times 100
     \label{eq:error}
 \end{equation}
 Substituting the values of $\bar{p}$ and $p_{max}$ into Equation \ref{eq:error},
 the percentage error is given by:
 \begin{equation}
-    \% error = \frac{[Insert P] - [Insert P]}{[Insert Pressure]} \times 100 = [Insert]
+    \% error = \frac{\lvert 7500 - 8000\rvert}{\lvert 8000\rvert} \times 100 = 6.25\%
     \label{eq:error_value}
 \end{equation}
-The experimental burst pressure of the pressure vessel is [Insert Percentage Here]
+The experimental burst pressure of the pressure vessel is 6.25\%
 lower than the predicted maximum pressure.\\[10pt]
 To improve the performance of the pressure vessel, the team recommends that the
 adhesion between the vessel and the base be improved to prevent failure at the
@@ -231,11 +231,11 @@ and lastly to provide a failure analysis for the pressure vessel.\\[10pt]
 The key findings are summarized as follows:
 \begin{itemize}
     \item The analytical calculations predicted that the pressure vessel can
-        withstand a maximum pressure of [Insert Pressure Here] while the
+        withstand a maximum pressure of 8000 Pa while the
         experimental burst tests showed that the pressure vessel can withstand
-        a maximum pressure of [Insert Pressure Here]. As a result, the
+        a pressure of 7500 Pa. As a result, the
         percentage error between the predicted maximum pressure and the
-        experimental burst pressure is [Insert Percentage Here].
+        experimental burst pressure is 6.25\%.
     \item The failure analysis showed that the failure occurred at the bottom
         of the vessel at the seam between the vessel and the base.
     \item The failure occurred due to the poor adhesion between the vessel and
