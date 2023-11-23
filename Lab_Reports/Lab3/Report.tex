@@ -1,0 +1,101 @@
+\documentclass[12pt, titlepage]{article}
+
+\usepackage{graphicx} % Allows for images
+\usepackage{wrapfig} % Allows for text wrapping around images
+\usepackage{hyperref} % Allows for hyperlinks
+\usepackage{siunitx} % Allows for SI units
+\usepackage{amsmath} % Allows for math
+\usepackage{enumerate} % Allows for custom enumerations
+\usepackage{xcolor} % Allows for custom colors
+\usepackage{tikz, tcolorbox} % Allows for custom boxes
+\usepackage{microtype} % Allows for better text alignment
+\usepackage{listings} % Allows for code listings
+\usepackage{booktabs} % Allows for better tables
+\usepackage{float} % Allows for better figure placement
+\usepackage{geometry} % Allows for custom page geometry
+\usepackage{fancyhdr} % Allows for custom headers and footers
+\usepackage{caption} % Allows for custom captions
+\usepackage{array} % Required package for specifying column width and line in the table
+\usepackage{changepage} % Required for the adjustwidth environment to temporarily widen margins
+
+\fancypagestyle{myarticlestyle}{
+    \fancyhf{} % Clear header and footer
+    \fancyhead[L]{\leftmark} % Section name on the left
+    \fancyhead[R]{\thepage} % Page number on the right
+}
+\fancypagestyle{tocstyle}{
+    \fancyhf{} % Clear header and footer
+    \fancyhead[L]{CONTENTS} % Section name on the left
+    \fancyhead[R]{\thepage} % Page number on the right
+}
+
+\pagestyle{myarticlestyle}
+\setlength{\headheight}{15pt}
+
+\begin{document}
+\tableofcontents
+\listoffigures
+\listoftables
+\thispagestyle{tocstyle}
+\newpage
+\section{Objectives}
+\begin{enumerate}
+    \item \textbf{Determination of Buckling Loads:}
+    \begin{itemize}
+        \item Investigate and quantify the buckling loads of slender pin-ended bars through experimental procedures.
+        \item Analyze the relationship between applied loads and the resulting center deflections for each tested bar.
+    \end{itemize}
+
+    \item \textbf{Comparison of Theoretical and Experimental Critical Loads:}
+    \begin{itemize}
+        \item Assess and calculate the theoretical critical loads for the pin-ended bars using relevant analytical models.
+        \item Perform experimental tests to determine the critical loads for each bar.
+        \item Conduct a comprehensive comparison between the theoretical predictions and the experimentally obtained critical loads for all tested bars.
+    \end{itemize}
+\end{enumerate}
+
+Through these objectives, the aim is to enhance our understanding of the
+buckling behavior of slender pin-ended bars and to evaluate the accuracy of
+theoretical predictions in relation to practical experimental outcomes.
+\newpage
+\section{Procedure}
+\begin{enumerate}
+    \item \textbf{Bar Insertion and Setup:}
+    \begin{itemize}
+        \item Insert one of the bars between the supports, ensuring that the ball bearing at the ends seats firmly.
+        \item Orient the larger dimension of the cross-section parallel to the floor.
+        \item Position the displacement transducer to measure the vertical deflection of the bar.
+    \end{itemize}
+
+    \item \textbf{Moment of Inertia Calculation and Critical Load Prediction:}
+    \begin{itemize}
+        \item Calculate the minimum moment of inertia for the inserted bar.
+        \item Predict the critical load for the bar based on the calculated moment of inertia.
+    \end{itemize}
+
+    \item \textbf{Data Collection Using Dalite Datascan Configurator:}
+    \begin{itemize}
+        \item Open the Dalite Datascan Configurator at the DB2Bc.OVL file.
+        \item Click on the "monitor every second" window.
+        \item Verify that the initial reading for the electrical potentiometer is zero.
+        \item Apply the load increments slowly.
+        \item At each increment, record the central deflection.
+        \item Continue to increase the load until the column buckles or the central deflection becomes large.
+    \end{itemize}
+
+    \item \textbf{Repeat for All Bars:}
+    \begin{itemize}
+        \item Repeat steps 2 to 4 for all four bars in the experimental setup.
+    \end{itemize}
+\end{enumerate}
+
+This procedure outlines the steps to insert the bars, calculate relevant
+parameters, and conduct the experimental testing using the Dalite Datascan
+Configurator. It ensures systematic data collection for each bar in the study.
+\newpage
+\section{Results}
+\newpage
+\section{Discussion}
+\newpage
+\section{Conclusions}
+\end{document}
