@@ -94,6 +94,190 @@ parameters, and conduct the experimental testing using the Dalite Datascan
 Configurator. It ensures systematic data collection for each bar in the study.
 \newpage
 \section{Results}
+\subsection{Plot Calibration Charts}
+The calibration charts for the load cell and the displacement transducer are
+shown in the subsequent figures. The calibration charts are used to determine
+the equation of the line of best fit for the data points. The equation is then
+used to calculate the load for any pressure values that exceeded those for
+which the corresponding load is provided.
+\subsubsection{Bar 1: 508 mm}
+The calibration chart for the load cell of Bar 1 with 508 mm length is shown
+in figure \ref{fig:bar1calib} along with the equation of the line of best fit.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/508.png}
+    \caption{Bar 1 Calibration Chart}
+    \label{fig:bar1calib}
+\end{figure}
+\subsubsection{Bar 2: 737 mm}
+The calibration chart for the load cell of Bar 2 with 737 mm length is shown
+in figure \ref{fig:bar2calib} along with the equation of the line of best fit.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/737.png}
+    \caption{Bar 2 Calibration Chart}
+    \label{fig:bar2calib}
+\end{figure}
+\subsubsection{Bar 3: 902 mm}
+The calibration chart for the load cell of Bar 3 with 902 mm length is shown
+in figure \ref{fig:bar3calib} along with the equation of the line of best fit.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/902.png}
+    \caption{Bar 3 Calibration Chart}
+    \label{fig:bar3calib}
+\end{figure}
+\subsubsection{Bar 4: 997 mm}
+The calibration chart for the load cell of Bar 4 with 997 mm length is shown
+in figure \ref{fig:bar4calib} along with the equation of the line of best fit.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/997.png}
+    \caption{Bar 4 Calibration Chart}
+    \label{fig:bar4calib}
+\end{figure}
+\newpage
+\subsection{Calculated Pressure for Exceeding Loads}
+The pressure is calculated using the equation of the line of best fit for the
+calibration charts. The calculated pressure is shown along with the load and
+the deflection for each exceeding load in the subsequent tables.
+\subsubsection{Bar 1: 508 mm}
+The calculated pressure for the exceeding loads of Bar 1 with 508 mm length
+is shown in table \ref{tab:bar1exceed}.
+\begin{table}[H]
+    \centering
+    \caption{Bar 1: 508 mm Exceeding Loads}
+    \label{tab:bar1exceed}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Pressure (MPa)} & \textbf{Load (kN)} & \textbf{Deflection (mm)}\\
+        \hline
+        2.785481949 & 1.34 & 0.3277 \\
+        \hline
+        5.570963899 & 2.68 & 0.7734 \\
+        \hline
+        8.356445848 & 4.015 & 1.271 \\
+        \hline
+        11.1419278 & 5.35 & 1.9436 \\
+        \hline
+        13.92740975 & 6.64 & 2.7734 \\
+        \hline
+        16.7128917 & 8.03 & 4.7394 \\
+        \hline
+        17.71952626 & 8.491637222 & 12.083 \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsubsection{Bar 2: 737 mm}
+The calculated pressure for the exceeding loads of Bar 2 with 737 mm length
+is shown in table \ref{tab:bar2exceed}.
+\begin{table}[H]
+    \centering
+    \caption{Bar 2: 737 mm Exceeding Loads}
+    \label{tab:bar2exceed}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Pressure (MPa)} & \textbf{Load (kN)} & \textbf{Deflection (mm)}\\
+        \hline
+        1.268635343 & 0.616 & 0.2422 \\
+        \hline
+        2.537270687 & 1.23 & 0.6727 \\
+        \hline
+        3.80590603 & 1.845 & 1.2167 \\
+        \hline
+        5.074541373 & 2.46 & 1.6104 \\
+        \hline
+        6.343176716 & 3.075 & 2.1479 \\
+        \hline
+        7.61181206 & 3.69 & 2.7867 \\
+        \hline
+        10.06634566 & 4.879857741 & 23.3818 \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsubsection{Bar 3: 902 mm}
+The calculated pressure for the exceeding loads of Bar 3 with 902 mm length
+is shown in table \ref{tab:bar3exceed}.
+\begin{table}[H]
+    \centering
+    \caption{Bar 3: 737 mm Exceeding Loads}
+    \label{tab:bar3exceed}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Pressure (MPa)} & \textbf{Load (kN)} & \textbf{Deflection (mm)}\\
+        \hline
+        0.896318449 & 0.427 & 0.1628 \\
+        \hline
+        1.792636898 & 0.853 & 0.2696 \\
+        \hline
+        2.688955347 & 1.28 & 0.4546 \\
+        \hline
+        3.585273796 & 1.707 & 0.6953 \\
+        \hline
+        4.481592245 & 2.13 & 1.2315 \\
+        \hline
+        5.377910694 & 2.56 & 5.1589 \\
+        \hline
+        7.322232253 & 3.483685883 & 18.8641 \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsubsection{Bar 4: 997 mm}
+The calculated pressure for the exceeding loads of Bar 4 with 997 mm length
+is shown in table \ref{tab:bar4exceed}.
+\begin{table}[H]
+    \centering
+    \caption{Bar 4: 997 mm Exceeding Loads}
+    \label{tab:bar4exceed}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Pressure (MPa)} & \textbf{Load (kN)} & \textbf{Deflection (mm)}\\
+        \hline
+        0.717054759 & 0.345 & 0.1956 \\
+        \hline
+        1.434109519 & 0.69 & 0.6738 \\
+        \hline
+        2.151164278 & 1.035 & 1.0114 \\
+        \hline
+        2.868219037 & 1.38 & 1.3878 \\
+        \hline
+        3.585273796 & 1.725 & 1.9515 \\
+        \hline
+        4.302328556 & 2.07 & 2.4975 \\
+        \hline
+        6.343176716 & 3.051702318 & 20.7397 \\
+        \hline
+    \end{tabular}
+\end{table}
+\subsection{Calculate Minimum Moment of Inertia}
+\subsection{Plot Load-Deflection Curves}
+This section shows the load-deflection curves for each bar with an indication
+of the critical load. Then, the percentage error between the theoretical and
+experimental critical loads is calculated.
+\subsubsection{Bar 1: 508 mm}
+The load-deflection curve for Bar 1 with 508 mm length is shown in figure
+\ref{fig:bar1loaddefl}. The theoretical critical load is 8.4916 kN and the
+experimental critical load is 8.03 kN.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Images/d508.png}
+    \caption{Bar 1: 508 mm Load-Deflection Curve}
+    \label{fig:bar1loaddefl}
+\end{figure}
+The percentage error between the theoretical and experimental critical loads
+is calculated using equation \ref{eq:percenterror} and is shown in equation
+\ref{eq:bar1percenterror}.
+\begin{equation}
+    \label{eq:percenterror}
+    \text{Percentage Error} = \frac{\text{Experimental} - \text{Theoretical}}{\text{Theoretical}} \times 100
+\end{equation}
+Substituting the values in equation \ref{eq:percenterror} yields equation
+\ref{eq:bar1percenterror}.
+\begin{equation}
+    \label{eq:bar1percenterror}
+    \text{Percentage Error} = \frac{8.03 - 8.4916}{8.4916} \times 100 = -5.43\%
+\end{equation}
+
 \newpage
 \section{Discussion}
 \newpage
