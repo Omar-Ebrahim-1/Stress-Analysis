@@ -249,7 +249,67 @@ is shown in table \ref{tab:bar4exceed}.
         \hline
     \end{tabular}
 \end{table}
-\subsection{Calculate Minimum Moment of Inertia}
+\subsection{Analytical Calculations for Bar 1: 508 mm}
+The following information is given:
+\begin{itemize}
+    \item $A = 12.7 \mathrm{mm} \times 19.07$ mm = 242.489 mm$^2$
+    \item $E = 70$ GPa
+    \item $L = 508$ mm
+\end{itemize}
+\subsubsection{Minimum Moment of Inertia}
+The minimum moment of inertia is calculated using equation \ref{eq:mininertia}.
+\begin{equation}
+    \label{eq:mininertia}
+    I_{min} = \frac{bh^3}{12}
+\end{equation}
+Substituting the values in equation \ref{eq:mininertia} yields equation
+\ref{eq:bar1mininertia}.
+\begin{equation}
+    \label{eq:bar1mininertia}
+    I_{min} = \frac{19.07 \times 12.7^3}{12} = 3255.2219 \mathrm{mm}^4
+\end{equation}
+\subsubsection{Critical Load}
+The critical load is calculated using equation \ref{eq:critload}.
+\begin{equation}
+    \label{eq:critload}
+    P_{cr} = \frac{\pi^2 EI_{min}}{L^2}
+\end{equation}
+Substituting the values in equation \ref{eq:critload} yields equation
+\ref{eq:bar1critload}.
+\begin{equation}
+    \label{eq:bar1critload}
+    P_{cr} = \frac{\pi^2 \times 70 \times 10^9 \times 3255.2219 \times 10^{-12}}{(508 \times 10^{-3})^2} = 8.7146 \mathrm{kN}
+\end{equation}
+\subsubsection{Critical Stress}
+The critical stress is calculated using equation \ref{eq:critstress}.
+\begin{equation}
+    \label{eq:critstress}
+    \sigma_{cr} = \frac{P_{cr}}{A}
+\end{equation}
+Substituting the values in equation \ref{eq:critstress} yields equation
+\ref{eq:bar1critstress}.
+\begin{equation}
+    \label{eq:bar1critstress}
+    \sigma_{cr} = \frac{8.71467 \times 10^3}{242.489} = 35.9829 \mathrm{MPa}
+\end{equation}
+\subsubsection{Radius of Gyration}
+The radius of gyration is calculated using equation \ref{eq:radiusgyration}.
+\begin{equation}
+    \label{eq:radiusgyration}
+    r = \sqrt{\frac{I}{A}}
+\end{equation}
+Substituting the values in equation \ref{eq:radiusgyration} yields equation
+\ref{eq:bar1radiusgyration}.
+\begin{equation}
+    \label{eq:bar1radiusgyration}
+    r = \sqrt{\frac{3255.2219}{242.489}} = 3.66617 \mathrm{mm}
+\end{equation}
+\subsubsection{Slenderness Ratio}
+The slenderness ratio is calculated using equation \ref{eq:slenderness}.
+\begin{equation}
+    \label{eq:slenderness}
+    \frac{L}{r} = \frac{508}{3.66617} = 138.564
+\end{equation}
 \subsection{Plot Load-Deflection Curves}
 This section shows the load-deflection curves for each bar with an indication
 of the critical load. Then, the percentage error between the theoretical and
@@ -367,6 +427,47 @@ shown in table \ref{tab:summary}.
 \end{table}
 \newpage
 \section{Discussion}
+\subsection{Results Discussion}
+The experimental results indicate that the critical load decreases as the
+length of the bar increases. This is consistent with theoretical predictions
+and can be attributed to the increase in the slenderness ratio as the length
+increases. The critical stress also decreases as the length increases, which
+is also consistent with theoretical predictions. The percentage error between
+the theoretical and experimental critical loads increases as the length
+increases. This is likely due to the increased sensitivity of the longer bars
+to environmental conditions and other factors that can affect the buckling
+behavior.
+\subsection{Sources of Error}
+The percentage errors indicate variations between theoretical predictions and
+experimental results. Factors such as:
+\begin{itemize}
+    \item \textbf{Environmental Conditions:} Variations in temperature, humidity, or other environmental factors can impact material behavior and measurements.
+
+    \item \textbf{Alignment Issues:} Misalignment of experimental setup components, such as the load application system or displacement transducer, can lead to inaccuracies.
+
+    \item \textbf{Instrumentation Limitations:} The precision and accuracy of measuring instruments, such as the load cell or displacement transducer, can introduce errors.
+
+    \item \textbf{Boundary Conditions:} Deviations from idealized boundary conditions, such as perfectly pinned ends, can affect the buckling behavior.
+
+    \item \textbf{Friction Effects:} Friction at the support points or between components can influence the buckling behavior.
+\end{itemize}
+Add to the errors between the theoretical and experimental results.\\[10pt]
+Despite discrepancies, the experiment successfully demonstrated the buckling behavior
+of slender pin-ended bars and provided insights into the accuracy of
+theoretical predictions. Future work could focus on refining experimental
+procedures and addressing sources of error for improved accuracy in
+theoretical-experimental comparisons.
 \newpage
 \section{Conclusions}
+The objectives of the experiment were successfully achieved. The buckling
+behavior of slender pin-ended bars was investigated and quantified through
+experimental procedures. The relationship between applied loads and the
+resulting center deflections for each tested bar was analyzed. The theoretical
+critical loads for the pin-ended bars were assessed and calculated using
+relevant analytical models. Experimental tests were performed to determine
+the critical loads for each bar. A comprehensive comparison between the
+theoretical predictions and the experimentally obtained critical loads for
+all tested bars was conducted. The experiment enhanced our understanding of
+the buckling behavior of slender pin-ended bars and evaluated the accuracy
+of theoretical predictions in relation to practical experimental outcomes.
 \end{document}
